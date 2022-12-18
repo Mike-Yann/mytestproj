@@ -7,7 +7,7 @@ DIR_TMP="$(mktemp -d)"
 
 # Config & Run Caddy
 cat << EOF > /etc/caddy/Caddyfile
-:$PORT
+:80
 respond / 200
 @websockets {
         header Connection *Upgrade*
